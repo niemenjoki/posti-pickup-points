@@ -39,6 +39,8 @@ $ node --env-file=.env examples/search.js 00100
 npm install @niemenjoki/posti-pickup-points
 ```
 
+Paketti on pelkkä ES-moduuli. CommonJS-projektissa (`require`) käytä `await import('@niemenjoki/posti-pickup-points')` tai Node.js:n versiota 22.12 tai uudempaa.
+
 ## Käyttö
 
 Aja koodi vain palvelimella. Älä koskaan lähetä client secretiä selaimeen.

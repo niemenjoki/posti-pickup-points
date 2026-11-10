@@ -40,6 +40,8 @@ $ node --env-file=.env examples/search.js 00100
 npm install @niemenjoki/posti-pickup-points
 ```
 
+The package is an ES module only. In a CommonJS project (`require`), use `await import('@niemenjoki/posti-pickup-points')` or Node.js 22.12 or newer.
+
 ## Usage
 
 Run this on your server only. Never send the client secret to a browser.

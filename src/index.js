@@ -85,7 +85,7 @@ export function createPostiPickupClient(options = {}) {
   const clientId = text(options.clientId);
   const clientSecret = text(options.clientSecret);
   if (!clientId || !clientSecret) {
-    throw new PostiPickupError('missing_credentials', 'clientId and clientSecret are required.');
+    throw new PostiPickupError('missing_credentials', 'clientId and clientSecret are required. Did you load your .env file?');
   }
 
   const authUrl = text(options.authUrl) || DEFAULT_AUTH_URL;
@@ -115,7 +115,9 @@ export function createPostiPickupClient(options = {}) {
     }
     const body = await response.json().catch(() => null);
     if (!response.ok) {
-      throw new PostiPickupError(failureCode, `Posti responded with HTTP ${response.status}.`, {
+      const hint =
+        failureCode === 'auth_failed' && response.status === 401 ? ' Check clientId and clientSecret.' : '';
+      throw new PostiPickupError(failureCode, `Posti responded with HTTP ${response.status}.${hint}`, {
         status: response.status,
         details: body,
       });

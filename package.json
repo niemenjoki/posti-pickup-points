@@ -1,6 +1,6 @@
 {
   "name": "@niemenjoki/posti-pickup-points",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Search Posti (Finland) pickup points and parcel lockers (noutopiste, pakettiautomaatti) near a postcode with Posti's Pickup Point API. Token caching, typed results, no dependencies.",
   "type": "module",
   "exports": {

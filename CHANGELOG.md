@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2 - 2026-11-10
+
+- Error messages: `missing_credentials` asks whether the `.env` file was loaded, and `auth_failed` with
+  HTTP 401 says to check `clientId` and `clientSecret`. Error codes are unchanged.
+- README: the package is an ES module only; how to use it from CommonJS.
+
 ## 1.0.1 - 2026-11-10
 
 - Published from GitHub Actions with npm provenance. No code changes.
