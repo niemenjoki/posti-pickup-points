@@ -1,0 +1,28 @@
+{
+  "pickupPoints": [
+    {
+      "id": "2001",
+      "publicName": "Example Shop Mariehamn",
+      "location": {
+        "street": "Exempelgatan 2",
+        "postcode": "22100",
+        "city": "MARIEHAMN",
+        "countryCode": "FI"
+      },
+      "parcelLocker": false,
+      "distanceInMeters": 80
+    },
+    {
+      "id": "2002",
+      "publicName": "Example Locker Turku",
+      "location": {
+        "street": "Esimerkkitie 9",
+        "postcode": "20100",
+        "city": "TURKU",
+        "countryCode": "FI"
+      },
+      "parcelLocker": true,
+      "distanceInMeters": 0
+    }
+  ]
+}

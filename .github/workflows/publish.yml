@@ -1,0 +1,27 @@
+# Publishes to npm when a GitHub release is published.
+# Uses npm trusted publishing (OIDC), so no npm token is stored in the repository.
+# Set it up once on npmjs.com: package Settings -> Trusted publishers -> GitHub Actions,
+# repository niemenjoki/posti-pickup-points, workflow publish.yml, "Allow npm publish".
+name: Publish
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+      - run: npm test
+      - name: Release tag matches package.json
+        run: test "v$(node -p "require('./package.json').version")" = "${{ github.event.release.tag_name }}"
+      - run: npm publish --provenance --access public

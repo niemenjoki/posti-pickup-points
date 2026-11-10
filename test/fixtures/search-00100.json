@@ -1,0 +1,49 @@
+{
+  "pickupPoints": [
+    {
+      "id": "1001",
+      "publicName": "Example Market Keskusta",
+      "careOf": "Example Market Oy",
+      "location": {
+        "street": "Esimerkkikatu 1",
+        "postcode": "00100",
+        "city": "HELSINKI",
+        "municipality": "Helsinki",
+        "countryCode": "FI",
+        "specificLocation": "Inside, next to the entrance"
+      },
+      "parcelLocker": false,
+      "routingServiceCode": "2103",
+      "distanceInMeters": 120
+    },
+    {
+      "id": "1002",
+      "publicName": "Posti Parcel Locker, Example Station",
+      "careOf": "",
+      "location": {
+        "street": "Asemapolku 3",
+        "postcode": "00100",
+        "city": "HELSINKI",
+        "municipality": "Helsinki",
+        "countryCode": "FI",
+        "specificLocation": "Station hall"
+      },
+      "parcelLocker": true,
+      "routingServiceCode": "2103",
+      "distanceInMeters": 340
+    },
+    {
+      "id": "1003",
+      "publicName": "Example Kiosk",
+      "location": {
+        "street": "Kauppatie 7",
+        "postcode": "00120",
+        "city": "HELSINKI",
+        "countryCode": "FI"
+      },
+      "parcelLocker": false,
+      "routingServiceCode": "2103",
+      "distanceInMeters": "not-a-number"
+    }
+  ]
+}
