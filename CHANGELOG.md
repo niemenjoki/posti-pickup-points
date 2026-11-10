@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 - 2026-11-10
+
+- Published from GitHub Actions with npm provenance. No code changes.
+
 ## 1.0.0 - 2026-11-10
 
 First public release.
