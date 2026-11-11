@@ -21,6 +21,9 @@ toimitustavoiksi. Käyttää Postin
 Paketti ei ole Postin tekemä eikä Postin kanssa yhteistyössä tehty. Tarvitset omat rajapintatunnukset Postilta
 (tilataan Postin LogEDI-yhteyshenkilön kautta).
 
+Tuotantokäytössä: pienen verkkokauppani [lieromaa.fi](https://www.lieromaa.fi/?utm_source=github&utm_medium=readme&utm_campaign=posti-pickup-points):n kassa hakee noutopisteet tällä
+paketilla.
+
 Mukana olevan esimerkin tuloste oikeilla tunnuksilla (testattu Postin tuotantorajapintaa vasten 10.11.2026):
 
 ```text

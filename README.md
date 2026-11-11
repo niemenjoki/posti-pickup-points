@@ -19,6 +19,9 @@ online shop's checkout. Uses Posti's
 
 Not affiliated with Posti. You need your own API credentials from Posti (ordered through Posti's LogEDI contact).
 
+Used in production: the checkout of [lieromaa.fi](https://www.lieromaa.fi/?utm_source=github&utm_medium=readme&utm_campaign=posti-pickup-points), my small online shop, searches its pickup
+points with this package.
+
 **Suomeksi:** Postin noutopisteiden ja pakettiautomaattien haku postinumerolla Node.js:llä, esimerkiksi verkkokaupan
 kassalle. [Ohje suomeksi](https://github.com/niemenjoki/posti-pickup-points/blob/main/README.fi.md).
 
